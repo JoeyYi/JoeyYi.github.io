@@ -1,0 +1,154 @@
+html {
+    height:100%;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #B5CAA0;
+}
+
+body {
+    line-height: 1.15;
+    height: 100%;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+aside {
+    background: #516E41;
+    color: #FFFFFB;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;    
+    width: 240px;
+    height: 100%;
+}
+
+aside a {
+    color: #FFFFFB;
+    -webkit-transition: all .2s;  
+    transition: all .2s;  
+}
+
+aside a:hover {
+    color: #B5CAA0;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+#sidebar {
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    text-align: center;
+    margin: 0;
+}
+
+#footer-container {
+    padding: 10px;
+}
+
+#contact {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contact li {
+    display: inline;
+}
+
+#contact p {
+    position: relative;
+    margin: 0;
+}
+
+#contact p::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #FFFFFB;
+}
+
+#contact p::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #FFFFFB;
+}
+
+article {
+    font-family: Georgia, serif;
+    position: fixed;
+    width: calc( 80% - 240px) ;
+    height: 100%;
+    left: 240px;
+    top: 0;
+    color: #516E41;
+}
+
+article a {
+    color: #516E41;
+    display: block;
+    padding: 5px;
+    border-left: 5px solid #FFFFFB;
+    background: #FFFFFB;
+    border-radius: 5px;
+    -webkit-transition: all .2s;  
+    transition: all .2s;  
+}
+
+article a:hover {
+    color: #4A593D;
+    border-color: #4A593D;
+}
+
+article ul {
+    list-style: none;
+}
+
+#home-content {
+    padding: 10px;
+    display: block;
+}
+
+#home-content h2,h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+#home-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+#home-content li {
+    padding: 10px 0 0;
+    -webkit-transition: all .2s;  
+    transition: all .2s;  
+}
+
+#home-content li:hover {
+    color: black;
+
+}

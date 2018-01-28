@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{post.title}} - Joey's tech blog</title>
+        <meta name="description" content="Yijing's Blog" />
+        <meta charset="utf-8" />
+        <meta name="keywords" content="web development, code, photography, illustration" />
+        <meta name="author" content="Yijing Wang" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    </head>
+
+    <body>
+        <aside>
+        	<div id="sidebar">
+                {% include header.html %}
+                {% include footer.html %}
+            </div>
+        </aside>
+
+        <article id="post">  
+            <div id="post-title">
+                {{post.title}}
+            </div>
+            <div class="post-content">
+              {{ content }}
+            </div>
+
+        </article>
+    </body>
+</html>
