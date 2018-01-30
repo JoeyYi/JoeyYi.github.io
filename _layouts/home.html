@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
+    <head>
+        <title>Catalas - Yijing's tech blog</title>
+        <meta name="description" content="Yijing's Blog" />
+        <meta charset="utf-8" />
+        <meta name="keywords" content="web development, code, photography, illustration" />
+        <meta name="author" content="Yijing Wang" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
     <body>
         <aside>
             <div id="sidebar">
@@ -9,20 +17,24 @@
             </div>
         </aside>
 
-        <article id="home-content">  
-            <div >
+        <article >  
+            <div id="home-content">
                 <ul class="post-list">
                     {% for post in site.posts %}
                         <li class="post-item">
                             <a class="post-link" href="{{ post.url | relative_url }}">
                                 {% assign date_format = "%b %-d, %Y" %}
-                                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                                <h3>{{ post.title | escape }}</h3>
+                                <span class="post-meta">{{ post.date | date: date_format }} | {{ post.category }}</span>
+                                <h2 class="list-title">{{ post.title | escape }}</h2>
+                                <p class="list-excerpt">{{ post.excerpt }}</p>
+                               
+
                             </a>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
         </article>
+        <script type="text/javascript" src="/scripts/pager.js"></script>
     </body>
 </html>

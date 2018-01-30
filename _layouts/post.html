@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-
+    <head>
+        <title>Catalas - Yijing's tech blog</title>
+        <meta name="description" content="Yijing's Blog" />
+        <meta charset="utf-8" />
+        <meta name="keywords" content="web development, code, photography, illustration" />
+        <meta name="author" content="Yijing Wang" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../../../../css/main.css" />
+    </head>
     <body>
         <aside>
         	<div id="sidebar">
@@ -12,10 +19,13 @@
 
         <article id="post">  
             <div id="post-title">
-                {{post.title}}
+                {{page.title}}
             </div>
-            <div class="post-content">
+            <div id="post-content">
               {{ content }}
+              <p> Category: {{ page.categories}}</p>
+              {% assign date_format = "%b %-d, %Y" %}
+              <p> Updated: {{ page.date | date: date_format }}</p>
             </div>
 
         </article>

@@ -21,19 +21,20 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Null
 github_username:  JoeyYi
-destination: ./docs
+destination: ./_site
+# paginate: 5
+# paginate_path: "/page:num/"
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+#  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
-    - ./docs
-
+# exclude:
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
