@@ -133,7 +133,7 @@ article {
     font-family: Georgia, serif;
     position: fixed;
     width: calc( 90% - 240px) ;
-    height: 100%;
+    height: calc(100% - 40px);
     left: 240px;
     top: 0;
     color: #516E41;
